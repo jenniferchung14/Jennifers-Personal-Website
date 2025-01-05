@@ -1,0 +1,112 @@
+.main-page {
+    display: flex;
+}
+
+.main-page h1 {
+    text-align: center;
+}
+
+.main-page .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    margin-top: 120px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.main-page .jenn {
+    width:350px;
+    height:350px;
+    border-radius: 20%;
+}
+
+.main-page .text-area {
+    flex: 2;
+    padding-right: 80px;
+}
+
+.main-page .text-area h1 {
+    text-align: left;
+}
+
+.main-page .text-area p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.main-page .portrait {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-page footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1029px) {
+    .main-page .container{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 35px;
+        margin-top: 250px;
+    }
+    
+    .main-page .text-area{
+        flex: 1;
+        padding-right: 10;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .main-page .container{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 35px;
+        margin-top: 250px;
+    }
+    
+    .main-page .text-area{
+        flex: 1;
+        padding-right: 10;
+    }
+}
+
+@media screen and (max-width: 936px) {
+    .main-page .container{
+        flex-direction: column;
+    }
+    
+    .main-page .portrait {
+        width: 100%;
+    }
+
+    .main-page .text-area {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .main-page .container{
+        margin-top: 100px;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 40px;
+    }
+    
+    .main-page .portrait {
+        flex: 1;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .main-page .text-area{
+        flex: 1;
+        padding-right: 0;
+    }
+}

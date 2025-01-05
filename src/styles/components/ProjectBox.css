@@ -1,0 +1,52 @@
+.project-box {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 36px;
+}
+  
+.project-box h2{
+    color: black;
+    margin: 0px;
+} 
+  
+.project-box p{
+    color: black;
+    line-height: 26px;
+    margin: 0px;
+} 
+  
+.project-box i{
+    color: black;
+} 
+  
+.project-text-section {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 30px;
+    box-sizing: border-box;
+    height: fit-content;
+    gap: 24px;
+}
+  
+.tags-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+    row-gap: 12px;
+}
+  
+.tag {
+    display: flex;
+    background-color: #6E85B7;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 6px 16px;
+}
+  
+.tag p {
+    color: #FCFFE7;
+}

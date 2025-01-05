@@ -1,0 +1,72 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6E85B7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 16px 3px,
+    rgba(0, 0, 0, 0.3) 0px 1px 10px -1px;
+    height: 80px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+}
+
+.menu li:hover {
+    background-color: #B2C8DF;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 30px 20px;
+}
+
+.menu .a {
+    color: #FCFFE7;
+}
+
+.menu a:visited {
+    color: #FCFFE7;
+}
+
+.logo {
+    width:70px;
+    max-width: 100px;
+    background-color: transparent;
+    transform: translate(10px);
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    user-select: none;
+    cursor: pointer;
+    padding: 0px 30px;
+}
+
+@media screen and (max-width: 767px){
+    .menu {
+        display:none;
+        position: absolute;
+        background-color: #6E85B7;
+        margin-top: 15px;
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+  
+    .menu li:hover {
+        background-color: #B2C8DF;
+        transition: 0.3s ease;
+    }
+  
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+  
+    .hamburger {
+        display: block;
+    }
+  }

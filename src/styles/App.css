@@ -1,0 +1,470 @@
+a {
+  text-decoration: none;
+}
+
+.a-links{
+  color: #6E85B7;
+}
+
+.a-links:hover {
+  color:#ffe46a;
+}
+
+.centered {
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.typing-effect {
+  overflow: hidden;
+  border-right: .15em solid #6E85B7; 
+  white-space: nowrap;
+  animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#discoverButton {
+  background-color: #6E85B7; 
+  border: none;
+  padding: 15px 32px;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  border-radius: 24px;
+  position: relative;
+  width: 225px;
+  color: #FCFFE7;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 12s;
+}
+
+#discoverButton:hover {
+  background-color: #ffe46a;
+  cursor: pointer;
+}
+
+.centerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+input[type=checkbox] {
+  display: none;
+} 
+
+/* waving emoji animation */
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #6E85B7; } 
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .desktop {
+    display: block;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .line_1,
+  .line_2,
+  .line_3 {
+    white-space: nowrap; /* keep text in one line */
+    overflow: hidden; /* hide text behind the cursor */
+    margin: 0.5rem auto;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .line_1 {
+    /* define animation types for text + cursor */
+    animation: 
+      animated-text_1 1s steps(16) 1s 1 normal both,
+      animated-cursor_3 900ms steps(30) infinite;
+  }
+  
+  .line_2 {
+    /* border-right: 4px solid #6E85B7; */
+    animation: 
+      animated-text_2 5s steps(70) 1s 1 normal both,
+      animated-cursor_3 900ms steps(30) infinite; 
+    -webkit-animation-delay: 2s;
+    animation-delay: 3s;
+  }
+
+  .line_3 {
+    border-right: 4px solid #C4D7E0;
+    animation: 
+      animated-text_3 4s steps(40) 1s 1 normal both,
+      animated-cursor_3 950ms steps(30) infinite;
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+
+  @keyframes animated-cursor {
+    from {
+      border-right-color: #C4D7E0;
+    }
+  }
+
+  @keyframes animated-cursor_3 {
+    from {
+      border-right-color: #C4D7E0;
+    }
+    to {
+      border-right-color: #6E85B7;
+    } 
+  }
+
+  @keyframes animated-text_1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 12.8rem;
+    }
+  }
+
+  @keyframes animated-text_2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 68rem;
+    }
+  }
+
+  @keyframes animated-text_3 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 39rem
+    }
+  }
+      
+}
+
+@media screen and (min-width: 768px) and (max-width: 1029px) {
+    .desktop {
+      display: none;
+    }
+
+    .tablet {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .line_1,
+    .line_2,
+    .line_3, 
+    .line_4{
+      white-space: nowrap; /* keep text in one line */
+      overflow: hidden; /* hide text behind the cursor */
+      margin: 0.5rem auto;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  
+    .line_1 {
+      /* border-right: 4px solid #6E85B7; */
+      /* define animation types for text + cursor */
+      animation: 
+        animated-text_1 1s steps(14) 1s 1 normal both,
+        animated-cursor_4 900ms steps(30);
+    }
+  
+    .line_2 {
+      /* border-right: 4px solid #6E85B7; */
+      animation: 
+        animated-text_2 2.4s steps(30) 1s 1 normal both,
+        animated-cursor_4 900ms steps(30);
+      -webkit-animation-delay: 2.5s;
+      animation-delay: 2.5s;
+    }
+
+    .line_3 {
+      animation: 
+        animated-text_3 3s steps(40) 1s 1 normal both,
+        animated-cursor_4 900ms steps(40);  
+      -webkit-animation-delay: 5.2s;
+      animation-delay: 5.2s;
+    }
+
+    .line_4 {
+      border-right: 4px solid #C4D7E0;
+      animation: 
+        animated-text_4 4s steps(40) 1s 1 normal both,
+        animated-cursor_4 950ms steps(40) infinite;
+      -webkit-animation-delay: 8.2s;
+      animation-delay: 8.2s;
+    }
+    
+    @keyframes animated-cursor {
+      from {
+        border-right-color: #6E85B7;
+      }
+    }
+
+    @keyframes animated-cursor_4 {
+      from {
+        border-right-color: #C4D7E0;
+      }
+      to {
+        border-right-color: #6E85B7;
+      } 
+
+    }
+
+    @keyframes animated-text_1 {
+      from {
+        width: 0;
+      }
+      to {
+        width: 12.8rem;
+      }
+    }
+
+    @keyframes animated-text_2 {
+      from {
+        width: 0;
+      }
+      to {
+        width: 30rem;
+      }
+    }
+
+    @keyframes animated-text_3 {
+      from {
+        width: 0;
+      }
+      to {
+        width: 38rem;
+      }
+    }
+
+    @keyframes animated-text_4 {
+      from {
+        width: 0;
+      }
+      to {
+        width: 39rem
+      }
+    }
+
+    .text-section {
+      padding: 0px 2rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .line_1,
+  .line_2,
+  .line_3,
+  .line_4,
+  .line_5,
+  .line_6,
+  .line_7 {
+    white-space: nowrap; /* keep text in one line */
+    overflow: hidden; /* hide text behind the cursor */
+    margin: 0.5rem auto;
+    font-size: 25px;
+    font-weight: bold;
+  }
+    
+  .line_1 {
+    animation: 
+      animated-text_1 1s steps(14) 1s 1 normal both,
+      animated-cursor_7 900ms steps(14);
+  }
+    
+  .line_2 {   
+    animation: 
+      animated-text_2 1.2s steps(19) 1s 1 normal both,
+      animated-cursor_7 900ms steps(19);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+
+  .line_3 {
+    animation: 
+      animated-text_3 1.5s steps(16) 1s 1 normal both,
+      animated-cursor_7 900ms steps(16);     
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+  }
+
+  .line_4 {
+    animation: 
+      animated-text_4 1s steps(16) 1s 1 normal both,
+      animated-cursor_7 900ms steps(16);         
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+
+  .line_5 {
+    animation: 
+      animated-text_5 1.5s steps(18) 1s 1 normal both,
+      animated-cursor_7 900ms steps(18);      
+    -webkit-animation-delay: 6.5s;
+    animation-delay: 6.5s;
+  }
+
+  .line_6 {
+    animation: 
+      animated-text_6 1s steps(20) 1s 1 normal both,
+      animated-cursor_7 900ms steps(20);       
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+
+  .line_7 {
+    border-right: 4px solid #C4D7E0;
+    animation: 
+      animated-text_7 1.5s steps(24) 1s 1 normal both,
+      animated-cursor_7 950ms steps(30) infinite;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+  }
+    
+  @keyframes animated-cursor {
+    from {
+      border-right-color: #6E85B7;
+    }
+  }
+
+  @keyframes animated-cursor_7 {
+    from {
+      border-right-color: #C4D7E0;
+    }
+    to {
+      border-right-color: #6E85B7;
+    } 
+  }
+
+  @keyframes animated-text_1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 10rem;
+    }
+  }
+
+  @keyframes animated-text_2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 12rem;
+    }
+  }
+
+  @keyframes animated-text_3 {
+    from {
+      width: 0;
+    }
+    to {
+        width: 14.8rem;
+    }
+  }
+
+  @keyframes animated-text_4 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 11.4rem;
+    }
+  }
+
+  @keyframes animated-text_5 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 14.5rem;
+    }
+  }
+
+  @keyframes animated-text_6 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 10.8rem;
+    }
+  }
+
+  @keyframes animated-text_7 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 16rem
+    }
+  }
+}

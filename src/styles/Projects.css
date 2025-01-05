@@ -1,0 +1,39 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .heading-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 24px;
+}
+  
+.projects .heading-section h1{
+    text-align: left;
+    line-height: 20px;
+}
+
+.projects .heading-section h3 {
+    font-weight: 280;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+.projects a:visited {
+    color: #FCFFE7;
+}
+
+.projects .project-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 416px) {
+    .projects .heading-section h1{
+        line-height: 48px;
+    }
+}

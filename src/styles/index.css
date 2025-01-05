@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #C4D7E0;
+    color: #FCFFE7;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+  font-weight: 310;
+  line-height: 38px;
+}
+
+.text-section{
+  padding: 0px 4rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Margins */
+@media screen and (min-width: 1200px) {
+    .text-section{
+        padding: 0px 8rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .text-section{
+        padding: 0px 11rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .text-section{
+        width: 1448px;
+        max-width: 1448px;
+        padding: 0px;
+        margin: 0px auto;
+    }
+}

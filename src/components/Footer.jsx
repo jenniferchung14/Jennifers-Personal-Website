@@ -6,7 +6,7 @@ function Footer() {
     <>
         <footer className="footer-styling">
             <p>{"thanks for stopping by! hope you enjoyed your time here :)"}</p>
-            <p>© 2024 Jennifer Chung</p>
+            <p>© 2025 Jennifer Chung</p>
             <li className="li-footer">
                 <a href="mailto: jennifer.chung@torontomu.ca">
                     <i className="fa fa-envelope"></i>

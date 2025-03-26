@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  color: #FCFFEE;
 }
 
 .a-links{
@@ -7,7 +8,7 @@ a {
 }
 
 .a-links:hover {
-  color:#ffe46a;
+  color:#fee569;
 }
 
 .centered {
@@ -40,14 +41,15 @@ a {
   border-radius: 24px;
   position: relative;
   width: 225px;
-  color: #FCFFE7;
+  color: #FCFFEE;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
   animation-delay: 12s;
+  font-weight: bold;
 }
 
 #discoverButton:hover {
-  background-color: #ffe46a;
+  background-color: #fee569;
   cursor: pointer;
 }
 
@@ -141,7 +143,7 @@ input[type=checkbox] {
   }
 
   .line_3 {
-    border-right: 4px solid #C4D7E0;
+    border-right: 4px solid #BED3E1;
     animation: 
       animated-text_3 4s steps(40) 1s 1 normal both,
       animated-cursor_3 950ms steps(30) infinite;
@@ -151,13 +153,13 @@ input[type=checkbox] {
 
   @keyframes animated-cursor {
     from {
-      border-right-color: #C4D7E0;
+      border-right-color: #BED3E1;
     }
   }
 
   @keyframes animated-cursor_3 {
     from {
-      border-right-color: #C4D7E0;
+      border-right-color: #BED3E1;
     }
     to {
       border-right-color: #6E85B7;
@@ -243,7 +245,7 @@ input[type=checkbox] {
     }
 
     .line_4 {
-      border-right: 4px solid #C4D7E0;
+      border-right: 4px solid #BED3E1;
       animation: 
         animated-text_4 4s steps(40) 1s 1 normal both,
         animated-cursor_4 950ms steps(40) infinite;
@@ -259,7 +261,7 @@ input[type=checkbox] {
 
     @keyframes animated-cursor_4 {
       from {
-        border-right-color: #C4D7E0;
+        border-right-color: #BED3E1;
       }
       to {
         border-right-color: #6E85B7;
@@ -321,150 +323,15 @@ input[type=checkbox] {
     display: block;
   }
 
-  .line_1,
-  .line_2,
-  .line_3,
-  .line_4,
-  .line_5,
-  .line_6,
-  .line_7 {
+  .lineStyling {
     white-space: nowrap; /* keep text in one line */
-    overflow: hidden; /* hide text behind the cursor */
     margin: 0.5rem auto;
     font-size: 25px;
     font-weight: bold;
-  }
-    
-  .line_1 {
-    animation: 
-      animated-text_1 1s steps(14) 1s 1 normal both,
-      animated-cursor_7 900ms steps(14);
-  }
-    
-  .line_2 {   
-    animation: 
-      animated-text_2 1.2s steps(19) 1s 1 normal both,
-      animated-cursor_7 900ms steps(19);
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    text-align: center;
   }
 
-  .line_3 {
-    animation: 
-      animated-text_3 1.5s steps(16) 1s 1 normal both,
-      animated-cursor_7 900ms steps(16);     
-    -webkit-animation-delay: 3.5s;
-    animation-delay: 3.5s;
-  }
-
-  .line_4 {
-    animation: 
-      animated-text_4 1s steps(16) 1s 1 normal both,
-      animated-cursor_7 900ms steps(16);         
-    -webkit-animation-delay: 5s;
-    animation-delay: 5s;
-  }
-
-  .line_5 {
-    animation: 
-      animated-text_5 1.5s steps(18) 1s 1 normal both,
-      animated-cursor_7 900ms steps(18);      
-    -webkit-animation-delay: 6.5s;
-    animation-delay: 6.5s;
-  }
-
-  .line_6 {
-    animation: 
-      animated-text_6 1s steps(20) 1s 1 normal both,
-      animated-cursor_7 900ms steps(20);       
-    -webkit-animation-delay: 8s;
-    animation-delay: 8s;
-  }
-
-  .line_7 {
-    border-right: 4px solid #C4D7E0;
-    animation: 
-      animated-text_7 1.5s steps(24) 1s 1 normal both,
-      animated-cursor_7 950ms steps(30) infinite;
-    -webkit-animation-delay: 10s;
-    animation-delay: 10s;
-  }
-    
-  @keyframes animated-cursor {
-    from {
-      border-right-color: #6E85B7;
-    }
-  }
-
-  @keyframes animated-cursor_7 {
-    from {
-      border-right-color: #C4D7E0;
-    }
-    to {
-      border-right-color: #6E85B7;
-    } 
-  }
-
-  @keyframes animated-text_1 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 10rem;
-    }
-  }
-
-  @keyframes animated-text_2 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 12rem;
-    }
-  }
-
-  @keyframes animated-text_3 {
-    from {
-      width: 0;
-    }
-    to {
-        width: 14.8rem;
-    }
-  }
-
-  @keyframes animated-text_4 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 11.4rem;
-    }
-  }
-
-  @keyframes animated-text_5 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 14.5rem;
-    }
-  }
-
-  @keyframes animated-text_6 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 10.8rem;
-    }
-  }
-
-  @keyframes animated-text_7 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 16rem
-    }
+  #discoverButton {
+    animation-delay: 0s;
   }
 }

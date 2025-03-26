@@ -70,13 +70,13 @@ function App() {
             </div>
 
             <div className="centered mobile">
-              <p className="line line_1 hidden">Hey there!<span className="wave">👋</span></p>
-              <p className="line line_2 hidden">It seems you've</p>
-              <p className="line line_3 hidden">stumbled your way</p>
-              <p className="line line_4 hidden">onto Jennifer's</p>
-              <p className="line line_5 hidden">website, welcome!</p>
-              <p className="line line_6 hidden">Click below to find</p>
-              <p className="line line_7 hidden ">{"out more about her :)"}</p>
+              <p className="lineStyling">Hey there!<span className="wave">👋</span></p>
+              <p className="lineStyling">It seems you've</p>
+              <p className="lineStyling">stumbled your way</p>
+              <p className="lineStyling">onto Jennifer's</p>
+              <p className="lineStyling">website, welcome!</p>
+              <p className="lineStyling">Click below to find</p>
+              <p className="lineStyling">{"out more about her :)"}</p>
               <div className="centerButton">
                 <Link to="/main">
                   <button id="discoverButton">Discover More!</button>
@@ -85,7 +85,7 @@ function App() {
             </div>
           </>
         } />
-        <Route path="/main" element={<><Header/><Main/></>}/>
+        <Route path="/main" element={<><Header/><Main/><Footer/></>}/>
         <Route path="/jennifer" element={renderPage(Jennifer)}/>
         <Route path="/projects" element={renderPage(Projects)}/>
       </Routes>

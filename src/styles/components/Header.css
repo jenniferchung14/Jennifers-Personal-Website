@@ -11,6 +11,7 @@
 /* NAVBAR MENU */
 .menu {
     display: flex;
+    color: #FCFFEE;
 }
 
 .menu li:hover {
@@ -23,11 +24,11 @@
 }
 
 .menu .a {
-    color: #FCFFE7;
+    color: #FCFFEE;
 }
 
 .menu a:visited {
-    color: #FCFFE7;
+    color: #FCFFEE;
 }
 
 .logo {

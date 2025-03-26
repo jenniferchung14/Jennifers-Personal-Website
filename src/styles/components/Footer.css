@@ -5,6 +5,7 @@
     padding-bottom: 15px;
     text-align: center;
     font-size: 15px;
+    margin-top: auto;
 }
   
 .footer-styling p {
@@ -24,7 +25,7 @@ li {
 }
 
 .li-footer i{
-    color: #FCFFE7;
+    color: #FCFFEE;
 }
 
 @media screen and (max-width: 767px){

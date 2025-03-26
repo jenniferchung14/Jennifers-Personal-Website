@@ -1,6 +1,5 @@
 import React from 'react';
 import jennifer from '../assets/jennifer.jpg';
-import Footer from '../components/Footer';
 
 function Main() {
   return (
@@ -18,7 +17,6 @@ function Main() {
             <img className="jenn" src={jennifer} alt="A picture of Jennifer Chung"/>
         </div>
       </div>
-      <Footer/>
     </div>
     </>
   );

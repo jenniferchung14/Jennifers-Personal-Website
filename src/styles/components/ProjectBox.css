@@ -1,26 +1,51 @@
 .project-box {
     display: flex;
-    background-color: white;
+    background-color: #6E85B7;
     border-radius: 20px;
-    width: 100%;
-    height: fit-content;
+    width: 540px;
+    height: 274px;
     margin-bottom: 36px;
 }
   
 .project-box h2{
-    color: black;
+    color: #FCFFEE;
     margin: 0px;
 } 
   
 .project-box p{
-    color: black;
+    color: #FCFFEE;
     line-height: 26px;
     margin: 0px;
 } 
   
 .project-box i{
-    color: black;
+    color: #FCFFEE;
 } 
+
+.project-heading-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCFFEE;
+    width: 36px;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.project-logo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-sizing: border-box;
+}
   
 .project-text-section {
     display: flex;
@@ -28,7 +53,7 @@
     padding: 24px 30px;
     box-sizing: border-box;
     height: fit-content;
-    gap: 24px;
+    gap: 16px;
 }
   
 .tags-section {
@@ -41,12 +66,51 @@
   
 .tag {
     display: flex;
-    background-color: #6E85B7;
+    background-color: #FCFFEE;
     border-radius: 8px;
     width: fit-content;
-    padding: 6px 16px;
+    padding: 0px 16px;
 }
   
 .tag p {
-    color: #FCFFEE;
+    color: #6E85B7;
+}
+
+@media screen and (max-width: 1210px) {
+    .project-box{
+        width: 492px;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .project-box{
+        width: 436px;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 946px) {
+    .project-box{
+        width: 384px;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 832px) {
+    .project-box{
+        width: 760px;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .logo-container {
+        width: 24px;
+        border-radius: 12px;
+    }
 }

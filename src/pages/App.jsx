@@ -15,6 +15,7 @@ import '../styles/Main.css';
 import '../styles/Jennifer.css';
 import '../styles/components/ProjectBox.css';
 import '../styles/Projects.css';
+import '../styles/components/IconBox.css';
 
 function App() {
   const renderPage = (ComponentToRender) => (

@@ -37,13 +37,16 @@ p {
 /* Margins */
 @media screen and (min-width: 1200px) {
     .text-section{
-        padding: 0px 8rem;
+        padding: 0px 4rem;
     }
 }
 
 @media screen and (min-width: 1400px) {
     .text-section{
-        padding: 0px 11rem;
+        width: 1200px;
+        max-width: 1200px;
+        padding: 0px 2rem;
+        margin: 0px auto;
     }
 }
 
@@ -51,7 +54,7 @@ p {
     .text-section{
         width: 1448px;
         max-width: 1448px;
-        padding: 0px;
+        padding: 0px 8rem;
         margin: 0px auto;
     }
 }

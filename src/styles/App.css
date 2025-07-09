@@ -31,27 +31,64 @@ a {
 }
 
 #discoverButton {
-  background-color: #6E85B7; 
-  border: none;
-  padding: 15px 32px;
-  white-space: nowrap;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 22px;
-  border-radius: 24px;
   position: relative;
-  width: 225px;
+  display: inline-block;
+  padding: 15px 32px;
+  width: 235px;
+  font-size: 22px;
+  font-weight: bold;
+  border: 2px solid #6E85B7;         
+  border-radius: 24px;
+  background-color: transparent;
   color: #FCFFEE;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
   animation-delay: 12s;
-  font-weight: bold;
+  z-index: 1;                         
 }
 
-#discoverButton:hover {
+#discoverButton span {
+  position: relative;
+  z-index: 2;                        
+  transition: color 0.4s ease-in-out;
+}
+
+#discoverButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
   background-color: #fee569;
-  cursor: pointer;
+  z-index: 0;                        
+  transition: width 0.4s ease-in-out;
+  border-radius: inherit;            
+}
+
+#discoverButton:hover::before {
+  width: 100%;
+}
+
+#discoverButton:hover span {
+  color: #6E85B7; 
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.centerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 
 .centerButton {

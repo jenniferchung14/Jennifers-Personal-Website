@@ -53,7 +53,7 @@ function App() {
               <p className="line line_3 hidden">{"Click below to find out more about her :)"}</p>
               <div className="centerButton">
                 <Link to="/main">
-                  <button id="discoverButton">Discover More!</button>
+                  <button id="discoverButton"><span>Discover More!</span></button>
                 </Link>
               </div>
             </div>
@@ -65,7 +65,7 @@ function App() {
               <p className="line line_4 hidden">{"Click below to find out more about her :)"}</p>
               <div className="centerButton">
                 <Link to="/main">
-                  <button id="discoverButton">Discover More!</button>
+                  <button id="discoverButton"><span>Discover More!</span></button>
                 </Link>
               </div>
             </div>
@@ -80,7 +80,7 @@ function App() {
               <p className="lineStyling">{"out more about her :)"}</p>
               <div className="centerButton">
                 <Link to="/main">
-                  <button id="discoverButton">Discover More!</button>
+                  <button id="discoverButton"><span>Discover More!</span></button>
                 </Link>
               </div>
             </div>

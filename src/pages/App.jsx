@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Main from './MainPage'; 
 import Jennifer from './Jennifer';
+import Experience from './Experience';
 import Projects from './Projects'; 
 
 import '../styles/index.css';
@@ -16,6 +17,8 @@ import '../styles/Jennifer.css';
 import '../styles/components/ProjectBox.css';
 import '../styles/Projects.css';
 import '../styles/components/IconBox.css';
+import '../styles/Experience.css';
+import '../styles/components/ExperienceBox.css';
 
 function App() {
   const renderPage = (ComponentToRender) => (
@@ -86,8 +89,9 @@ function App() {
             </div>
           </>
         } />
-        <Route path="/main" element={<><Header/><Main/><Footer/></>}/>
+        <Route path="/main" element={renderPage(Main)}/>
         <Route path="/jennifer" element={renderPage(Jennifer)}/>
+        <Route path="/experience" element={renderPage(Experience)}/>
         <Route path="/projects" element={renderPage(Projects)}/>
       </Routes>
     </BrowserRouter>

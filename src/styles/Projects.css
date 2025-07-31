@@ -75,3 +75,9 @@
         font-size: 1.2rem;
     }
 }
+
+@media (max-width: 766px) {
+    .projects .heading-section {
+        margin-top: 30px;
+    }
+}

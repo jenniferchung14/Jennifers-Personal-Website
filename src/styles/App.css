@@ -361,6 +361,10 @@ input[type=checkbox] {
     display: block;
   }
 
+  .text-section {
+    padding: 0px 2rem;
+  }
+
   .lineStyling {
     white-space: nowrap; /* keep text in one line */
     margin: 0.5rem auto;

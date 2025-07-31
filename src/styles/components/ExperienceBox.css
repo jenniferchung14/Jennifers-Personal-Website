@@ -1,0 +1,129 @@
+.experience-box {
+    background-color: #6E85B7;
+    width: 100%;
+    height: fit-content;
+    border-radius: 16px;
+    padding: 4px 24px;
+}
+
+.experience-box li {
+    list-style-type: disc;
+    line-height: 26px;
+    font-weight: 310;
+}
+
+.experience-box p {
+    line-height: 26px;
+    padding-top: 4px;
+}
+
+.position-info h3,
+.position-info p {
+    margin-bottom: 0;
+}
+
+.position-info p {
+    margin-top: 0;
+}
+
+.date-section {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.date-section p {
+    font-weight: bold;
+}
+
+.date {
+    display: flex;
+    width: fit-content;
+    padding: 0px 4px;
+    background-color: #FCFFE7;
+    color: #6E85B7;
+    border-radius: 8px;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-height: 38px;
+}
+
+.position-info2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    box-sizing: border-box;
+}
+
+.title-section h3 {
+    margin-bottom: 0;
+}
+
+.title-section p {
+    margin: 0;
+}
+
+.date-section2 {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    padding: 12px 0px;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.date-section2 p {
+    font-weight: bold;
+}
+
+@media (max-width: 975px) {
+    .title-section h3 {
+        max-width: 560px; /* Adjust as needed for your design */
+        word-break: break-word;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 766px) {
+    .position-info2 {
+        flex-direction: column;
+    }
+
+    .date {
+        padding: 0px;
+        background-color: transparent;
+        color: #FCFFE7;
+        border-radius: 0px;
+    }
+
+    .date-section {
+        justify-content: left;
+        width: 100%;
+    }
+
+    .date-section2 {
+        padding: 0px;
+    }
+
+    .date-section p, 
+    .date-section2 p {
+        font-weight: normal;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .date-section p, 
+    .date-section2 p {
+        font-size: 15px;
+    }
+
+    .experience-box li {
+        font-size: 14.5px
+    }
+}

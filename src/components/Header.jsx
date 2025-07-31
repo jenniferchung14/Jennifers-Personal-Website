@@ -26,7 +26,8 @@ function Header() {
 
                     <div className="menu">
                         <li><Link to="/jennifer" onClick={closeMenu}>A Deeper Dive!</Link></li>
-                        <li><a href={resume} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Jenn's Journey!</a></li>
+                        {/* <li><a href={resume} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Jenn's Journey!</a></li> */}
+                        <li><Link to="/experience" onClick={closeMenu}>Jenn's Journey!</Link></li>
                         <li><Link to="/projects" onClick={closeMenu}>Code Gallery!</Link></li>
                     </div>
                 </ul>

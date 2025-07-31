@@ -96,6 +96,10 @@
         margin-right: 0%;
         padding: 40px;
     }
+
+    .main-page h1 {
+        margin-top: 10px;
+    }
     
     .main-page .portrait {
         flex: 1;

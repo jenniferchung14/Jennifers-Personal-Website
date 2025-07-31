@@ -4,16 +4,17 @@ import ExperienceBox from '../components/ExperienceBox';
 
 const workExperiences = [
   {
-    title: "National IT Systems Support",
+    title: "National IT Systems Support (Co-op)",
     company: "Big Brothers Big Sisters of Canada",
     dateRanges: "May 2025 - Aug 2025",
     bulletPoints: [
+      "Designed and implemented a Power Automate Flow to automatically send onboarding emails upon user creation in the system, improving onboarding efficiency and consistency",
       "Managed 50+ user accounts across 10+ agencies using Microsoft 365 Admin Center and resolved an average of 20–30 weekly tickets for setups, deletion, access, permissions, and password issues",
       "Reduced average ticket resolution time by 30% through proactive communication and standardized account setup procedures"
     ]
   },
   {
-    title: "Web Developer",
+    title: "Web Developer (Co-op)",
     company: "Civiconnect",
     dateRanges: ["Jan 2025 - Mar 2025", "May 2024 - Aug 2024"],
     bulletPoints: [
@@ -32,7 +33,7 @@ const workExperiences = [
     ]
   },
   {
-    title: "Business Technology Analyst",
+    title: "Business Technology Analyst (Co-op)",
     company: "Dion Strategic Consulting Group Inc.",
     dateRanges: "Sep 2023 - Dec 2023",
     bulletPoints: [
@@ -42,16 +43,17 @@ const workExperiences = [
     ]
   },
   {
-    title: "Executive IT Support",
+    title: "Executive IT Support (Co-op)",
     company: "MPBSD Government of Ontario",
     dateRanges: "May 2023 - Sep 2023",
     bulletPoints: [
       "Assisted 25+ clients with setting up their devices and facilitated device configuration, ensuring in a seamless onboarding experience",
-      "Provided technical support to clients by offering various solutions to resolving technical issues through diagnosing and troubleshooting devices and softwares"
+      "Provided technical support to clients by offering various solutions to resolving technical issues through diagnosing and troubleshooting devices and softwares",
+      "Collaborated in a small team to write FAQs for the Ontario Public Service (OPS) website and optimize existing FAQS"
     ]
   },
   {
-    title: "Network Systems Technician ",
+    title: "Network Systems Technician",
     company: "Toronto Metropolitan University",
     dateRanges: "May 2022 - Jul 2022",
     bulletPoints: [
@@ -60,7 +62,6 @@ const workExperiences = [
     ]
   }
 ];
-
 
 const leadership = [
   {
@@ -113,9 +114,9 @@ function Experience() {
     <div class="experience text-section">
             <div class="heading-section">
               <h1>Jenn's Journey</h1>
-              <h3>below is an overview of Jennifer’s wide range of experience from leadership to work experiences along with the skills she has developed</h3>
+              <h3>Below is an overview of Jennifer’s wide range of experience from leadership to work experiences along with the skills she has developed</h3>
               <h3>along the way over the years</h3> 
-              <h3>don’t have time to scroll? view my <b><a href={resume} target="_blank" rel="noopener noreferrer" class="a-links">resume</a></b> instead</h3>
+              <h3>Don’t have time to scroll? View my <b><a href={resume} target="_blank" rel="noopener noreferrer" class="a-links">resume</a></b> instead</h3>
             </div>
             <div className='experience-container'>
               <h2>Work Experience</h2>
@@ -129,8 +130,6 @@ function Experience() {
                     bulletPoints={exp.bulletPoints}
                   />
                 ))}
-
-                {/* <ExperienceBox/> */}
               </div>
             </div>
             

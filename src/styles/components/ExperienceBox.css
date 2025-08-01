@@ -40,6 +40,7 @@
     display: flex;
     width: fit-content;
     padding: 0px 4px;
+    padding-bottom: 4px;
     background-color: #FCFFE7;
     color: #6E85B7;
     border-radius: 8px;

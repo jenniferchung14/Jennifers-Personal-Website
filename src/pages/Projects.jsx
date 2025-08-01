@@ -97,8 +97,8 @@ function Projects() {
 
   return (
     <>
-    <div class="projects text-section">
-        <div class="heading-section"> 
+    <div className="projects text-section">
+        <div className="heading-section"> 
             <h1>Code Gallery!</h1>
             <div>
                 <h3>Welcome to the exhibit of Jennifer’s coding creations! First, we have a showcase of some of the langauges and tools I have picked up at a quick glance,

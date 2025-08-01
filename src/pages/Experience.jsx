@@ -110,60 +110,58 @@ const education = [
 
 function Experience() {
   return (
-    <>
     <div class="experience text-section">
-            <div class="heading-section">
-              <h1>Jenn's Journey</h1>
-              <h3>Below is an overview of Jennifer’s wide range of experience from leadership to work experiences along with the skills she has developed</h3>
-              <h3>along the way over the years</h3> 
-              <h3>Don’t have time to scroll? View my <b><a href={resume} target="_blank" rel="noopener noreferrer" class="a-links">resume</a></b> instead</h3>
-            </div>
-            <div className='experience-container'>
-              <h2>Work Experience</h2>
-              <div className='timeline'>
-                {workExperiences.map((exp, idx) => (
-                  <ExperienceBox
-                    key={exp.title + idx}
-                    title={exp.title}
-                    company={exp.company}
-                    dateRanges={exp.dateRanges}
-                    bulletPoints={exp.bulletPoints}
-                  />
-                ))}
-              </div>
-            </div>
-            
-            <div className='experience-container'>
-              <h2>Leadership</h2>
-              <div className='timeline'>
-                {leadership.map((exp, idx) => (
-                  <ExperienceBox
-                    key={exp.title + idx}
-                    title={exp.title}
-                    company={exp.company}
-                    dateRanges={exp.dateRanges}
-                    bulletPoints={exp.bulletPoints}
-                  />
-                ))}
-              </div>
-            </div>
+      <div class="heading-section">
+        <h1>Jenn's Journey</h1>
+        <h3>Below is an overview of Jennifer’s wide range of experience from leadership to work experiences along with the skills she has developed</h3>
+        <h3>along the way over the years</h3> 
+        <h3>Don’t have time to scroll? View my <b><a href={resume} target="_blank" rel="noopener noreferrer" class="a-links">resume</a></b> instead</h3>
+      </div>
+      <div className='experience-container'>
+        <h2>Work Experience</h2>
+        <div className='timeline'>
+          {workExperiences.map((exp, idx) => (
+            <ExperienceBox
+              key={exp.title + idx}
+              title={exp.title}
+              company={exp.company}
+              dateRanges={exp.dateRanges}
+              bulletPoints={exp.bulletPoints}
+            />
+          ))}
+        </div>
+      </div>
+      
+      <div className='experience-container'>
+        <h2>Leadership</h2>
+        <div className='timeline'>
+          {leadership.map((exp, idx) => (
+            <ExperienceBox
+              key={exp.title + idx}
+              title={exp.title}
+              company={exp.company}
+              dateRanges={exp.dateRanges}
+              bulletPoints={exp.bulletPoints}
+            />
+          ))}
+        </div>
+      </div>
 
-            <div className='experience-container'>
-              <h2>Education</h2>
-              <div className='timeline'>
-                {education.map((exp, idx) => (
-                  <ExperienceBox
-                    key={exp.title + idx}
-                    title={exp.title}
-                    company={exp.company}
-                    dateRanges={exp.dateRanges}
-                    bulletPoints={exp.bulletPoints}
-                  />
-                ))}
-              </div>
-            </div>
+      <div className='experience-container'>
+        <h2>Education</h2>
+        <div className='timeline'>
+          {education.map((exp, idx) => (
+            <ExperienceBox
+              key={exp.title + idx}
+              title={exp.title}
+              company={exp.company}
+              dateRanges={exp.dateRanges}
+              bulletPoints={exp.bulletPoints}
+            />
+          ))}
+        </div>
+      </div>
     </div>
-    </>
   );
 }
 

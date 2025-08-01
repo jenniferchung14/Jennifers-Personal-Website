@@ -48,21 +48,21 @@
     flex-wrap: wrap;
     font-weight: bold;
     font-size: 2rem;
-  }
+}
   
-  .wave-letter {
+.wave-letter {
     display: inline-block;
     animation: wave 1.5s infinite;
-  }
+}
   
-  @keyframes wave {
+@keyframes wave {
     0%, 60%, 100% {
       transform: translateY(0);
     }
     30% {
       transform: translateY(-10px);
     }
-  }
+}
   
 @media screen and (max-width: 416px) {
     .projects .heading-section h1{

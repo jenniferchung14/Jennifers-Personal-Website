@@ -4,6 +4,8 @@ import IconBox from '../components/IconBox';
 import discoverLincoln from '../assets/DiscoverLincoln.png';
 import soundCheck from '../assets/SoundCheck.png';
 import studyOppa from '../assets/Study.png';
+import eCommerce from '../assets/ECommerce.png';
+import turtle from '../assets/turtle.png';
 import html from '../assets/html.png';
 import css from '../assets/css.png';
 import javascript from '../assets/javascript.png'; 
@@ -49,8 +51,22 @@ function Projects() {
         projectLogo: studyOppa,
         projectDescription: "A multi-functional study Discord Bot built by a group of friends for the RU Hacks 2022. Main features of this bot include: a commodore timer, flashcards, to-do lists and weekly calendar.",
         projectAchievement: ["Top 10 Overall", "The Wolfram Award"],
-        projectTags: ["Python"],
+        projectTags: ["Python", "Discord API"],
         projectLink: "https://github.com/jenniferchung14/Study-Oppa"
+      },
+      {
+        projectName: "E-Commerce Simulator",
+        projectLogo: eCommerce,
+        projectDescription: "An e-commerce simulator where customers can browse and buy products, with a personal cart where they can view, add or remove items. Once ready, they can order everything in their cart, and the system ships the products.",
+        projectTags: ["Java"],
+        projectLink: "https://github.com/jenniferchung14/E-Commerce-System-Simulator"
+      },
+      {
+        projectName: "Turtle Olympics",
+        projectLogo: turtle,
+        projectDescription: "A quick and fun mini-game where five turtles compete in a 100-metre dash. At the start of each round, players place a bet on a turtle, and the race outcome decides whether they gain or lose money.",
+        projectTags: ["Python", "Turtle"],
+        projectLink: "https://github.com/jenniferchung14/Turtle-Olympics"
       }
   ];
   

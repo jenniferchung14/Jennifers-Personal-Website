@@ -4,7 +4,7 @@ import IconBox from '../components/IconBox';
 import discoverLincoln from '../assets/DiscoverLincoln.png';
 import soundCheck from '../assets/SoundCheck.png';
 import studyOppa from '../assets/Study.png';
-import eCommerce from '../assets/ECommerce.png';
+import eCommerce from '../assets/eCommerce.png';
 import turtle from '../assets/turtle.png';
 import html from '../assets/html.png';
 import css from '../assets/css.png';

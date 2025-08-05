@@ -12,7 +12,7 @@ function ProjectBox({projectName, projectDescription, projectAchievement, projec
             rel="noopener noreferrer"
         >
             <div className="project-box">
-                <div class="project-text-section">
+                <div className="project-text-section">
                     <div className="project-heading-section"> 
                         <h2>{projectName}</h2>
                         <div className="logo-container">
@@ -28,7 +28,7 @@ function ProjectBox({projectName, projectDescription, projectAchievement, projec
                     <div className="tags-section" style={noAchievements ? { marginTop: '12px' } : {}}>
                         {projectTags.map((tag) => {
                             return (
-                                <div class="tag">
+                                <div className="tag">
                                     <p>{tag}</p>
                                 </div>
                         )})}

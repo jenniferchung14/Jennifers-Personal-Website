@@ -110,8 +110,8 @@ const education = [
 
 function Experience() {
   return (
-    <div class="experience text-section">
-      <div class="heading-section">
+    <div className="experience text-section">
+      <div className="heading-section">
         <h1>Jenn's Journey</h1>
         <h3>Below is an overview of Jennifer’s wide range of experience from leadership to work experiences along with the skills she has developed</h3>
         <h3>along the way over the years</h3> 

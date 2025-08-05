@@ -15,3 +15,13 @@ export default defineConfig([
   { files: ["**/*.md"], plugins: { markdown }, language: "markdown/gfm", extends: ["markdown/recommended"] },
   { files: ["**/*.css"], plugins: { css }, language: "css/css", extends: ["css/recommended"] },
 ]);
+
+  module.exports = {
+              parser: '@babel/eslint-parser', // Or '@typescript-eslint/parser'
+              parserOptions: {
+                ecmaVersion: 2022, // Or a later version if needed
+                sourceType: 'module',
+                // ... other parser options like requireConfigFile for babel-eslint-parser
+              },
+              // ... other ESLint configurations
+  };

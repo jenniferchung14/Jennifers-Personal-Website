@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import jennifer from '../assets/favicon.png';
-import resume from '../assets/Resume - Jennifer Chung.pdf';
 
 function Header() {
     
@@ -25,10 +24,10 @@ function Header() {
                     <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
 
                     <div className="menu">
-                        <li><Link to="/jennifer" onClick={closeMenu}>A Deeper Dive!</Link></li>
+                        <div><Link to="/jennifer" onClick={closeMenu}><li>A Deeper Dive!</li></Link></div>
                         {/* <li><a href={resume} target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Jenn's Journey!</a></li> */}
-                        <li><Link to="/experience" onClick={closeMenu}>Jenn's Journey!</Link></li>
-                        <li><Link to="/projects" onClick={closeMenu}>Code Gallery!</Link></li>
+                        <div><Link to="/experience" onClick={closeMenu}><li>Jenn's Journey!</li></Link></div>
+                        <div><Link to="/projects" onClick={closeMenu}><li>Code Gallery!</li></Link></div>
                     </div>
                 </ul>
             </nav>

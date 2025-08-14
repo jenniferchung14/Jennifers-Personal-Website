@@ -23,7 +23,7 @@ function Jennifer() {
             </div>
 
             <div className="image-container">
-                <img src={cscu} alt="CSCU 2023 Bar Night" height="254px"/>
+                <img className="CSCU" src={cscu} alt="CSCU 2023 Bar Night" height="254px"/>
                 <div className="image-overlay">CSCU 2023 Bar Night</div>
             </div>
 

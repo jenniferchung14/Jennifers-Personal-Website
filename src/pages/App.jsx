@@ -23,9 +23,11 @@ import '../styles/components/ExperienceBox.css';
 function App() {
   const renderPage = (ComponentToRender) => (
     <>
-      <Header/>
-      <ComponentToRender/>
-      <Footer/>
+      <Header />
+      <div className="main-content">
+        <ComponentToRender />
+      </div>
+      <Footer />
     </>
   );
 
@@ -47,53 +49,55 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={
-          <>
-            <div className="centered desktop">
-              <p className="line line_1 hidden">Hey there!<span className="wave">👋</span></p>
-              <p className="line line_2 hidden">It seems you've stumbled your way onto Jennifer's website, welcome!</p>
-              <p className="line line_3 hidden">{"Click below to find out more about her :)"}</p>
-              <div className="centerButton">
-                <Link to="/main">
-                  <button id="discoverButton"><span>Discover More!</span></button>
-                </Link>
+      <div className="app-container">
+        <Routes>
+          <Route path="/" element={
+            <>
+              <div className="centered desktop">
+                <p className="line line_1 hidden">Hey there!<span className="wave">👋</span></p>
+                <p className="line line_2 hidden">It seems you've stumbled your way onto Jennifer's website, welcome!</p>
+                <p className="line line_3 hidden">{"Click below to find out more about her :)"}</p>
+                <div className="centerButton">
+                  <Link to="/main">
+                    <button id="discoverButton"><span>Discover More!</span></button>
+                  </Link>
+                </div>
               </div>
-            </div>
 
-            <div className="centered tablet">
-              <p className="line line_1 hidden">Hey there!<span className="wave">👋</span></p>
-              <p className="line line_2 hidden">It seems you've stumbled your</p>
-              <p className="line line_3 hidden">way onto Jennifer's website, welcome!</p>
-              <p className="line line_4 hidden">{"Click below to find out more about her :)"}</p>
-              <div className="centerButton">
-                <Link to="/main">
-                  <button id="discoverButton"><span>Discover More!</span></button>
-                </Link>
+              <div className="centered tablet">
+                <p className="line line_1 hidden">Hey there!<span className="wave">👋</span></p>
+                <p className="line line_2 hidden">It seems you've stumbled your</p>
+                <p className="line line_3 hidden">way onto Jennifer's website, welcome!</p>
+                <p className="line line_4 hidden">{"Click below to find out more about her :)"}</p>
+                <div className="centerButton">
+                  <Link to="/main">
+                    <button id="discoverButton"><span>Discover More!</span></button>
+                  </Link>
+                </div>
               </div>
-            </div>
 
-            <div className="centered mobile">
-              <p className="lineStyling">Hey there!<span className="wave">👋</span></p>
-              <p className="lineStyling">It seems you've</p>
-              <p className="lineStyling">stumbled your way</p>
-              <p className="lineStyling">onto Jennifer's</p>
-              <p className="lineStyling">website, welcome!</p>
-              <p className="lineStyling">Click below to find</p>
-              <p className="lineStyling">{"out more about her :)"}</p>
-              <div className="centerButton">
-                <Link to="/main">
-                  <button id="discoverButton"><span>Discover More!</span></button>
-                </Link>
+              <div className="centered mobile">
+                <p className="lineStyling">Hey there!<span className="wave">👋</span></p>
+                <p className="lineStyling">It seems you've</p>
+                <p className="lineStyling">stumbled your way</p>
+                <p className="lineStyling">onto Jennifer's</p>
+                <p className="lineStyling">website, welcome!</p>
+                <p className="lineStyling">Click below to find</p>
+                <p className="lineStyling">{"out more about her :)"}</p>
+                <div className="centerButton">
+                  <Link to="/main">
+                    <button id="discoverButton"><span>Discover More!</span></button>
+                  </Link>
+                </div>
               </div>
-            </div>
-          </>
-        } />
-        <Route path="/main" element={renderPage(Main)}/>
-        <Route path="/jennifer" element={renderPage(Jennifer)}/>
-        <Route path="/experience" element={renderPage(Experience)}/>
-        <Route path="/projects" element={renderPage(Projects)}/>
-      </Routes>
+            </>
+          } />
+          <Route path="/main" element={renderPage(Main)}/>
+          <Route path="/jennifer" element={renderPage(Jennifer)}/>
+          <Route path="/experience" element={renderPage(Experience)}/>
+          <Route path="/projects" element={renderPage(Projects)}/>
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
